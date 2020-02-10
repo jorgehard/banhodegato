@@ -1,12 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 html, body {
   padding:0px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin:0px;
+  scroll-behavior: smooth;
+}
+/* NavBar */
+.navbar-custom {
+  background-color:#1C67CC;
+  padding:0px;
+}
+.navbar-custom .button-nav{
+  padding:20px;
+  width:100px;
+  text-align:center;
+  background: #AD0045;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-weight:normal;
+  color: #FFFEFE !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar-custom .text-secondary{
+  color:#FFF !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  margin:10px 20px;
+}
+.navbar-custom .text-secondary:hover{
+  color:red !important;
 }
 /* Titulos & Paragrafos (Lead = Paragrafos novos)*/
 .lead{
   font-family: 'Roboto', sans-serif;
-  font-size: 28px;
-  line-height: 31px;
+  font-size: 24px;
+  line-height: 28px;
   padding:10px 120px;
   color: #737373;
 }
@@ -20,26 +48,47 @@ html, body {
   color: #737373;
 }
 #titulos{
-  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 38px;
   font-weight: bold;
   color: #737373;
   text-align:center;
+  color: #1C67CC;
 }
 /* ------------------- */
 #bloco{
   display: flex;
-  justify-content: 
-  space-between; 
-  align-items: 
-  center;margin: 10px;
+  justify-content: center; 
+  align-items: flex-start;
+  margin: 10px;
+}
+.sub-bloco{
+  padding:10px 0px;
+}
+#bloco h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #1C67CC;
+  margin-bottom:20px;
+}
+#bloco h4{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #737373;
+}
+#bloco p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  color: #737373;
+  width:80%;
 }
 #numeros{
-  background-color: #c4c4c4; 
-  border-radius: 100px;
-  text-align: center; 
-  height: 50px;width: 50px;
-  font-size: 30px;
-  margin: 10px;
+  margin:0px;
 }
 #tc_voluntarios{
   align-items: center;
@@ -93,18 +142,20 @@ html, body {
   margin: 30px;
 }
 #botao{
-  border: #737373 solid 3px;
-  color: #737373;
-  font-size: 30px;
-  box-shadow:2px 1px 10px 2px #737373;
-  text-align: center;
-  min-width: 250px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:10px;
-  text-shadow: 1px 2px 2px;
+  background: #AD0045;
+  border: 5px solid #AD0045;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding:25px;
+  margin:60px 0px;
+  text-decoration:none;
 }
 #botton{
   width: auto;
@@ -119,21 +170,49 @@ html, body {
 }
 /* Divs imagens referentes */
 .banner-topo1{
-  height: 500px;
+  height: 700px;
+  background: url(../imagens/morador-de-rua-1.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:relative;
+  top:0px;
+  left:0px;
 }
-.div-sobre-nos{
+.banner-topo1 p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  padding:60px;
+  margin-bottom:0px;
+  background: rgba(28, 103, 204, 0.7);
+}
+.div-sobre-nos, .div-kit-banho, .div-postos-doacao, .div-voluntarios, .div-sacola{
   padding:40px;
   min-height: 500px;
 }
-.div-postos-doacao{
-  padding:40px;
-  min-height: 500px;
+.div-enderecos{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-top:42px;
 }
-.div-voluntarios{
-  padding:40px;
-  min-height: 500px;
+.endereco-correios .sub-title{
+  width:45%;
 }
-.div-sacola{
-  min-height:300px;
-  padding:40px;
+.button-endereco{
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px){
+  .endereco-correios .sub-title{
+    width:100%;
+  }
 }
