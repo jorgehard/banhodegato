@@ -3,6 +3,7 @@ html, body {
   padding:0px;
   margin:0px;
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
 }
 /* NavBar */
 .navbar-custom {
@@ -23,7 +24,6 @@ html, body {
 }
 .navbar-custom .text-secondary{
   color:#FFF !important;
-  font-family: 'Roboto', sans-serif;
   font-size: 23px;
   margin:10px 20px;
 }
@@ -32,14 +32,12 @@ html, body {
 }
 /* Titulos & Paragrafos (Lead = Paragrafos novos)*/
 .lead{
-  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 28px;
   padding:10px 120px;
   color: #737373;
 }
 .sub-title{
-  font-family: 'Roboto', sans-serif;
   font-size: 28px;
   line-height: 31px;
   font-weight: normal;
@@ -48,7 +46,6 @@ html, body {
   color: #737373;
 }
 #titulos{
-  font-family: 'Roboto', sans-serif;
   font-size: 38px;
   font-weight: bold;
   color: #737373;
@@ -66,7 +63,6 @@ html, body {
   padding:10px 0px;
 }
 #bloco h3{
-  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: bold;
@@ -74,14 +70,12 @@ html, body {
   margin-bottom:20px;
 }
 #bloco h4{
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
   color: #737373;
 }
 #bloco p{
-  font-family: 'Roboto', sans-serif;
   font-size: 22px;
   line-height: 28px;
   color: #737373;
@@ -100,24 +94,33 @@ html, body {
 .div-voluntarios .col-3{
   padding:20px 0px;
 }
-#perfil_vo{
+.perfil_vo{
   background-color: #c4c4c4;
+  background-size: cover;
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  min-height:150px;
+  width: 100%;
   text-align: center;
 }
-.title-voluntario{
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  color: #737373;
-  font-weight:normal;
-  margin-top:15px;
-}
 .tem_voluntarios{
-  font-family: 'Roboto', sans-serif;
+  min-height: 150px;
   font-size: 14px;
-  color: #737373;
+  background: #1C67CC;
+  border: 5px solid #1C67CC;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: #fff;
+  padding:15px;
+}
+.tem_voluntarios .nome-voluntario{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+.tem_voluntarios .descricao-voluntario{
+  font-size: 18px;
+  line-height: 21px;
 }
 /* ------------ */
 #icones{
@@ -157,21 +160,16 @@ html, body {
   margin:60px 0px;
   text-decoration:none;
 }
-#botton{
-  width: auto;
-  height: 25px;
-  background-color: white;
-  color: #737373;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-weight: bold;
-  font-size: 15px;
-}
 /* Divs imagens referentes */
 .banner-topo1{
-  height: 700px;
   background: url(../imagens/morador-de-rua-1.jpg) no-repeat top center;
+  height: 700px;
+}
+.banner-mochila{
+  background: url(../imagens/mochila-amiga.jpg) no-repeat bottom center;
+  height: 842px;
+}
+.banner-topo1, .banner-mochila{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -191,9 +189,13 @@ html, body {
   margin-bottom:0px;
   background: rgba(28, 103, 204, 0.7);
 }
-.div-sobre-nos, .div-kit-banho, .div-postos-doacao, .div-voluntarios, .div-sacola{
-  padding:40px;
-  min-height: 500px;
+.div-sobre-nos, .div-kit-banho, .div-postos-doacao, .div-voluntarios, .div-projetos{
+  padding:10px 40px;
+  min-height: 400px;
+}
+.div-projetos2{
+  padding-top:120px;
+  min-height: 250px;
 }
 .div-enderecos{
   display: flex; 
