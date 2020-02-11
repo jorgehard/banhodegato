@@ -28,7 +28,7 @@ html, body {
   margin:10px 20px;
 }
 .navbar-custom .text-secondary:hover{
-  color:red !important;
+  color:#ccc !important;
 }
 /* Titulos & Paragrafos (Lead = Paragrafos novos)*/
 .lead{
@@ -212,6 +212,35 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+footer{
+  min-height:400px;
+  background: url(../imagens/footer.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:23px 0px;
+}
+footer h3{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #FFFEFE;
+}
+footer .footer-social{
+  padding:20px;
+}
+.ps-4{
+  padding:52px 20px !important;
+}
+.perfil_vo2{
+  background-color: #c4c4c4;
+  background-size: cover;
+  border-radius: 50%;
+  min-height:160px;
+  width: 90%;
+  text-align: center;
 }
 @media only screen and (max-width: 600px){
   .endereco-correios .sub-title{
