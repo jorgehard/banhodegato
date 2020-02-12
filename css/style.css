@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
-html, body {
-  padding:0px;
-  margin:0px;
-  scroll-behavior: smooth;
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 0;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 /* NavBar */
 .navbar-custom {
@@ -246,16 +258,22 @@ footer .footer-social{
 /* ----------------- Media Screen ----------------- */
 /* ------------------------------------------------ */
 @media (max-width: 491px)  {
-  .perfil_vo{
+  .perfil_vo, .perfil_vo2{
     min-height:150px;
     width: 150px;
     margin:0 auto;
     margin-bottom:20px;
   }
+  .s-pad{
+    padding:0px;
+  }
+  #botao{
+    padding:20px 0px;
+  }
 }
   
 @media (min-width: 491px) and (max-width: 767.98px) {
-  .perfil_vo{
+  .perfil_vo, .perfil_vo2{
     min-height:200px;
     width: 200px;
     margin:0 auto;
@@ -264,7 +282,7 @@ footer .footer-social{
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-  .perfil_vo{
+  .perfil_vo, .perfil_vo2{
     min-height:100px;
     width: 100px;
     margin-left:-20px;
