@@ -98,7 +98,7 @@ html, body {
   background-color: #c4c4c4;
   background-size: cover;
   border-radius: 50%;
-  min-height:150px;
+  min-height:140px;
   width: 100%;
   text-align: center;
 }
@@ -242,7 +242,57 @@ footer .footer-social{
   width: 90%;
   text-align: center;
 }
-@media only screen and (max-width: 600px){
+/* ------------------------------------------------ */
+/* ----------------- Media Screen ----------------- */
+/* ------------------------------------------------ */
+@media (max-width: 491px)  {
+  .perfil_vo{
+    min-height:150px;
+    width: 150px;
+    margin:0 auto;
+    margin-bottom:20px;
+  }
+}
+  
+@media (min-width: 491px) and (max-width: 767.98px) {
+  .perfil_vo{
+    min-height:200px;
+    width: 200px;
+    margin:0 auto;
+    margin-bottom:20px;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .perfil_vo{
+    min-height:100px;
+    width: 100px;
+    margin-left:-20px;
+  }
+  .tem_voluntarios{
+    padding:10px;
+  }
+  .tem_voluntarios .nome-voluntario{
+    font-size: 15px;
+  }
+  .tem_voluntarios .descricao-voluntario{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767.98px){
+  .nome-voluntario{
+    padding:20px 0px;
+  }
+  .div-postos-doacao #bloco img{
+    width:28px;
+  }
+  #titulos{
+    font-size:25px;
+    padding:0px !important;
+  }
+  .lead{
+    padding:0px;
+  }
   .endereco-correios .sub-title{
     width:100%;
   }
