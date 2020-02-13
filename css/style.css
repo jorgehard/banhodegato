@@ -197,6 +197,7 @@ html {
   position:absolute;
   bottom:0px;
   left:0px;
+  width:100%;
   padding:60px;
   margin-bottom:0px;
   background: rgba(28, 103, 204, 0.7);
@@ -298,6 +299,20 @@ footer .footer-social{
   }
 }
 @media only screen and (max-width: 767.98px){
+  .cr12 img{
+    width:350px;
+    height:300px;
+  }
+  .seguidores-insta{
+    display:none;
+  }
+  .box-instagram img{
+    height:150px !important;
+  }
+  .img-corre{
+    width:250px;
+    height:200px;
+  }
   .nome-voluntario{
     padding:20px 0px;
   }
@@ -313,5 +328,9 @@ footer .footer-social{
   }
   .endereco-correios .sub-title{
     width:100%;
+  }
+  .banner-topo1{
+    background-position:top left;
+    height: 500px;
   }
 }
