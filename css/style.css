@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 0;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* NavBar */
+.navbar-custom {
+  background-color:#1C67CC;
+  padding:0px;
+}
+.navbar-custom .button-nav{
+  padding:20px;
+  width:100px;
+  text-align:center;
+  background: #AD0045;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-weight:normal;
+  color: #FFFEFE !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar-custom .text-secondary{
+  color:#FFF !important;
+  font-size: 23px;
+  margin:10px 20px;
+}
+.navbar-custom .text-secondary:hover{
+  color:#ccc !important;
+}
+/* Titulos & Paragrafos (Lead = Paragrafos novos)*/
+.lead{
+  font-size: 24px;
+  line-height: 28px;
+  padding:10px 120px;
+  color: #737373;
+}
+.sub-title{
+  font-size: 28px;
+  line-height: 31px;
+  font-weight: normal;
+  padding:0px;
+  text-align:center;
+  color: #737373;
+}
+#titulos{
+  font-size: 38px;
+  font-weight: bold;
+  color: #737373;
+  text-align:center;
+  color: #1C67CC;
+}
+/* ------------------- */
+#bloco{
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  margin: 10px;
+}
+.sub-bloco{
+  padding:10px 0px;
+}
+#bloco h3{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #1C67CC;
+  margin-bottom:20px;
+}
+#bloco h4{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #737373;
+}
+#bloco p{
+  font-size: 22px;
+  line-height: 28px;
+  color: #737373;
+  width:80%;
+}
+#numeros{
+  margin:0px;
+}
+#tc_voluntarios{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+/* Voluntarios Box */
+.div-voluntarios .col-3{
+  padding:20px 0px;
+}
+.perfil_vo{
+  background-color: #c4c4c4;
+  background-size: cover;
+  border-radius: 50%;
+  min-height:140px;
+  width: 100%;
+  text-align: center;
+}
+.tem_voluntarios{
+  min-height: 150px;
+  font-size: 14px;
+  background: #1C67CC;
+  border: 5px solid #1C67CC;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: #fff;
+  padding:15px;
+}
+.tem_voluntarios .nome-voluntario{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+.tem_voluntarios .descricao-voluntario{
+  font-size: 18px;
+  line-height: 21px;
+}
+/* ------------ */
+#icones{
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  margin: 7px;
+}
+#parce_div{
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#parce{
+  background-color: #c4c4c4;
+  width: 300px;
+  height: 240px;
+  text-align: center;
+  margin: 30px;
+}
+#botao{
+  background: #AD0045;
+  border: 5px solid #AD0045;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding:25px;
+  margin:60px 0px;
+  text-decoration:none;
+}
+/* Divs imagens referentes */
+.banner-topo1{
+  height: 700px;
+}
+.banner-mochila{
+  background: url(../imagens/mochila-amiga.jpg) no-repeat bottom center;
+  height: 842px;
+}
+.banner-topo1, .banner-mochila{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:relative;
+  top:0px;
+  left:0px;
+}
+.banner-topo1 p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  padding:60px;
+  margin-bottom:0px;
+  background: rgba(28, 103, 204, 0.7);
+}
+.div-sobre-nos, .div-kit-banho, .div-postos-doacao, .div-voluntarios, .div-projetos{
+  padding:10px 40px;
+  min-height: 400px;
+}
+.div-projetos2{
+  padding-top:120px;
+  min-height: 250px;
+}
+.div-enderecos{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-top:42px;
+}
+.endereco-correios .sub-title{
+  width:45%;
+}
+.button-endereco{
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+  min-height:400px;
+  background: url(../imagens/footer.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:23px 0px;
+}
+footer h3{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #FFFEFE;
+}
+footer .footer-social{
+  padding:20px;
+}
+.ps-4{
+  padding:52px 20px !important;
+}
+.perfil_vo2{
+  background-color: #c4c4c4;
+  background-size: cover;
+  border-radius: 50%;
+  min-height:160px;
+  width: 90%;
+  text-align: center;
+}
+/* ------------------------------------------------ */
+/* ----------------- Media Screen ----------------- */
+/* ------------------------------------------------ */
+@media (max-width: 491px)  {
+  .perfil_vo, .perfil_vo2{
+    min-height:150px;
+    width: 150px;
+    margin:0 auto;
+    margin-bottom:20px;
+  }
+  .s-pad{
+    padding:0px;
+  }
+  #botao{
+    padding:20px 0px;
+  }
+}
+  
+@media (min-width: 491px) and (max-width: 767.98px) {
+  .perfil_vo, .perfil_vo2{
+    min-height:200px;
+    width: 200px;
+    margin:0 auto;
+    margin-bottom:20px;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .perfil_vo, .perfil_vo2{
+    min-height:100px;
+    width: 100px;
+    margin-left:-20px;
+  }
+  .tem_voluntarios{
+    padding:10px;
+  }
+  .tem_voluntarios .nome-voluntario{
+    font-size: 15px;
+  }
+  .tem_voluntarios .descricao-voluntario{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767.98px){
+  .cr12 img{
+    width:350px;
+    height:300px;
+  }
+  .seguidores-insta{
+    display:none;
+  }
+  .box-instagram img{
+    height:150px !important;
+  }
+  .img-corre{
+    width:250px;
+    height:200px;
+  }
+  .nome-voluntario{
+    padding:20px 0px;
+  }
+  .div-postos-doacao #bloco img{
+    width:28px;
+  }
+  #titulos{
+    font-size:25px;
+    padding:0px !important;
+  }
+  .lead{
+    padding:0px;
+  }
+  .endereco-correios .sub-title{
+    width:100%;
+  }
+  .banner-topo1{
+    background-position:top left;
+    height: 500px;
+  }
+}
